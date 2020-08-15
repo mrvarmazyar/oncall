@@ -981,11 +981,6 @@
                 {{timeSince start 'toString'}} - {{timeSince end 'toString'}}<br />
               {{/each}}
             {{else}}
-              {{#isEqual events.[0].duration 86400}}
-                {{timeSince events.[0].start 'toString'}} - Daily
-              {{else}}
-                {{timeSince events.[0].start 'toString'}} - Bi-Daily
-              {{/isEqual}}
               {{#isEqual events.[0].duration 604800000}}
                 {{timeSince events.[0].start 'toString'}} - Weekly
               {{else}}
